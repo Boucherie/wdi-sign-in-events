@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // body fades in  (fadeIn) using change in opacity and display setting over interval (duration)
 
   var signIn = document.querySelector('.signin');
-  var modal = document.querySelector('.modal');
+  var modalArea = document.querySelector('.modal');
   var closeButton = document.querySelector('.close');
   var submitButton = document.querySelector('.submit');
   var inputs = document.querySelectorAll('input');
@@ -30,5 +30,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   signIn.addEventListener('click', fadeIn);
-  closePage.addEventListener('click', fadeOut);
+  closeButton.addEventListener('click', fadeOut);
 });
